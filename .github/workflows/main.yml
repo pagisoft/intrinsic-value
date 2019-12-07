@@ -12,6 +12,9 @@ jobs:
     - name: Run intrinsic value jar
       run: java -jar intrinsic-value.jar
     
+    - name: Get current date
+      run: date
+    
     - name: Verify data folder exist
       working-directory: ${{ github.workspace }}
       run: ls -la
