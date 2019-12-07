@@ -1,6 +1,9 @@
-name: CI
+name: Get Data
 
-on: [push]
+on:
+  schedule:
+    # Runs at 00:00 UTC every day
+    - cron:  '0 0 * * *'
 
 jobs:
   build:
